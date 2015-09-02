@@ -385,7 +385,7 @@ a:hover
 	}
 
 	#Company article {
-		padding-left: 10px; 
+		padding-left: 20px; 
 	}
  
 	#Company p {
@@ -421,7 +421,7 @@ a:hover
 
 	#sidebar
 	{
-		margin-top: 40px ;
+		margin-top: 60px 
 	}
 	
 	#sidebar h2
@@ -455,6 +455,7 @@ a:hover
 	{
 		position: relative;
 		padding: 3em 0em;
+		background: #0c0e0f;
 		text-align: center;
 	}
 	
@@ -504,9 +505,8 @@ a:hover
 
 	}
 
-	#Contact .cont_right img {
-		width: 55%;
-    	margin-left: -25px;
+	#Contact .cont_left img {
+		width: 50%;
 	}
 
 	#Contact .cont_right
