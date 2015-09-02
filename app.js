@@ -14,7 +14,7 @@ var app = angular.module('junYuHomeApp',['ngRoute','angularLazyImg'])
 	{name:'金屬飾品',english:'Metal jewelry',icon:'images/icon/02.png',href:'a03'},
 	{name:'自黏水鑽',english:'Rhinestone',icon:'images/icon/03.png',href:'a04'}
 ])
-.config(function($routeProvider){
+.config(['$routeProvider', function($routeProvider){
 	$routeProvider
 	.when('/product/:type', {
 		controller:'ProductCtrl',
@@ -23,7 +23,7 @@ var app = angular.module('junYuHomeApp',['ngRoute','angularLazyImg'])
 	.otherwise({
 		redirectTo: '/product/a01'
 	})
-})
+}])
 .controller('HomeCtrl',['$scope','ProductItem',function($scope, ProductItem) {
 	
 	$scope.Product = ProductItem;
