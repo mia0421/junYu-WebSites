@@ -41,7 +41,7 @@ gulp.task('jsTool',function(){
         .pipe(source('app.min.js'))
         .pipe(buffer())
         .pipe(plumber())
-       	// .pipe(uglify())
+       	.pipe(uglify())
         .pipe(gulp.dest(path.DEST_BUILD))
         .pipe(notify({
             message:'js 完成'
@@ -63,7 +63,7 @@ gulp.task('cssTool',function(){
 	gulp.src(path.Css)
 	 	.pipe(plumber())
 		.pipe(concat('main.min.css'))
-		//.pipe(minifyCss())
+		.pipe(minifyCss())
 		.pipe(gulp.dest(path.DEST_BUILD))
 		.pipe(notify({
 		    message:'css 完成'
