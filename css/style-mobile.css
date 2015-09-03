@@ -158,11 +158,13 @@ h3
 			content: '';
 			display: block;
 			width: 20px;
-			height: 12px;
+			height: 16px;
 			position: absolute;
-			left: 25px;
-			top: 20px;
-			background: url('images/mobileUI-site-nav-opener-bg.svg') 0px 0px no-repeat;
+			left: 27px;
+			top: 16px;
+		/*	background: url('/css/images/mobileUISiteNavOpenerBg.svg') 0px 0px no-repeat;*/
+			background: url('images/menu51_3.png') 0px 0px no-repeat;
+			background-size: 16px;
 			opacity: 1;
 		}
 
